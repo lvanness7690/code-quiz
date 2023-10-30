@@ -8,6 +8,11 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    overflow-x: hidden;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
 }
 
 header {
@@ -15,12 +20,18 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 20px;
+    padding: 10px 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#timer, #view-high-scores {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #timer {
@@ -30,6 +41,7 @@ header {
 
 .main-content {
     text-align: center;
+    width: 100%;
     max-width: 600px;
     background-color: #ffffff;
     padding: 40px;
@@ -48,7 +60,7 @@ p {
     margin: 20px 0;
 }
 
-button {
+button, .main-content button {
     padding: 15px 25px;
     background-color: #5C6BC0;
     color: #ffffff;
@@ -57,9 +69,10 @@ button {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 10px;  /* This ensures there's a margin on all sides */
 }
 
-button:hover {
+button:hover, .main-content button:hover {
     background-color: #3F51B5;
 }
 
