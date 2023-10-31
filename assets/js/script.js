@@ -1,10 +1,10 @@
-const timerEl = document.getElementById("timer");
-const startQuizButton = document.getElementById("start-quiz");
-const mainContent = document.querySelector(".main-content");
-const viewHighScoresLink = document.getElementById("view-high-scores");
-let timeLeft = 60;
+var timerEl = document.getElementById("timer");
+var startQuizButton = document.getElementById("start-quiz");
+var mainContent = document.querySelector(".main-content");
+var viewHighScoresLink = document.getElementById("view-high-scores");
+var timeLeft = 60;
 
-const questions = [
+var questions = [
     {
         question: "Commonly used data types DO not Include:",
         options: ["1. strings", "2. booleans", "3. alerts", "4. numbers"],
@@ -32,7 +32,7 @@ const questions = [
     },
 ];
 
-let currentQuestionIndex = 0;
+var currentQuestionIndex = 0;
 
 startQuizButton.addEventListener("click", startQuiz);
 viewHighScoresLink.addEventListener("click", displayHighScores);
@@ -40,7 +40,7 @@ viewHighScoresLink.addEventListener("click", displayHighScores);
 function startQuiz() {
     startQuizButton.style.display = "none";
     timerEl.textContent = `Time: ${timeLeft}`;
-    const timer = setInterval(() => {
+    var timer = setInterval(() => {
         timeLeft--;
         timerEl.textContent = `Time: ${timeLeft}`;
         if (timeLeft <= 0 || currentQuestionIndex >= questions.length) {
@@ -52,10 +52,10 @@ function startQuiz() {
 }
 
 function displayQuestion() {
-    const currentQuestion = questions[currentQuestionIndex];
+    var currentQuestion = questions[currentQuestionIndex];
     mainContent.innerHTML = `<h2>${currentQuestion.question}</h2>`;
     currentQuestion.options.forEach(option => {
-        const button = document.createElement("button");
+        var button = document.createElement("button");
         button.textContent = option;
         button.addEventListener("click", () => checkAnswer(option, currentQuestion.answer));
         mainContent.appendChild(button);
@@ -82,8 +82,8 @@ function endQuiz() {
 }
 
 function saveScore() {
-    const initials = document.getElementById("initials").value;
-    const scores = JSON.parse(localStorage.getItem("scores")) || [];
+    var initials = document.getElementById("initials").value;
+    var scores = JSON.parse(localStorage.getItem("scores")) || [];
     scores.push({ initials, score: timeLeft });
     localStorage.setItem("scores", JSON.stringify(scores));
     mainContent.innerHTML = `<h2>Thank you!</h2>`;
@@ -92,14 +92,14 @@ function saveScore() {
 function displayHighScores(event) {
     event.preventDefault(); // prevent default link behavior
 
-    const scores = JSON.parse(localStorage.getItem("scores")) || [];
+    var scores = JSON.parse(localStorage.getItem("scores")) || [];
     mainContent.innerHTML = '<h2>High Scores</h2><ul id="scores-list"></ul>';
-    const scoresList = document.getElementById("scores-list");
+    var scoresList = document.getElementById("scores-list");
 
     scores.sort((a, b) => b.score - a.score); // sort scores in descending order
 
     scores.forEach(score => {
-        const li = document.createElement("li");
+        var li = document.createElement("li");
         li.textContent = `${score.initials}: ${score.score}`;
         scoresList.appendChild(li);
     });
