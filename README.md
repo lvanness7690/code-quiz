@@ -14,7 +14,7 @@ To being the quiz click on the Start Quiz button. Answer each question by select
 
 Here is a screenshot fo the website in action:
 
-![alt text](Assets/password-generator-demo.png)
+![alt text](Assets/code-quiz-demo.gif)
 
 Here is a link of the website:
 
