@@ -8,11 +8,15 @@ To help with studying I built a timed coding quiz with multiple-choice questions
 
 N/A
 
+## Technologies Used
+
+This project utilizes HTML, CSS, JavaScript, & jQuery
+
 ## Usage
 
 To being the quiz click on the Start Quiz button. Answer each question by selecting the correct answer. When you finish the quiz add your initials to view yourself on the leaderboard.
 
-Here is a screenshot fo the website in action:
+## SCreenshot
 
 ![Alt text](code-quiz-demo.gif)
 
@@ -26,4 +30,4 @@ N/A
 
 ## License
 
-Please refer to the license in the repo.
+Please refer to the license in the repo
