@@ -1,4 +1,5 @@
 # Coding Quiz
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
@@ -14,13 +15,13 @@ This project utilizes HTML, CSS, JavaScript, & jQuery
 
 ## Usage
 
-To being the quiz click on the Start Quiz button. Answer each question by selecting the correct answer. When you finish the quiz add your initials to view yourself on the leaderboard.
+To begin the quiz click on the Start Quiz button. Answer each question by selecting the correct answer. When you finish the quiz add your initials to view yourself on the leaderboard.
 
-## SCreenshot
+## Screenshot
 
 ![Alt text](code-quiz-demo.gif)
 
-Here is a link of the website:
+## Live Application
 
 [https://lvanness7690.github.io/code-quiz/]
 
