@@ -1,6 +1,15 @@
 # Coding Quiz
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Table of Contents\
+* [Description](#description)
+* [Installation](#installation)
+* [Technologies Used](#technologies-used)
+* [Usage](#usage)
+* [Screenshot](#screenshot)
+* [Credits](#credits)
+* [License](#license)
+
 ## Description
 
 To help with studying I built a timed coding quiz with multiple-choice questions. This app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript. The page has a clean, polished, and responsive user interface. 
